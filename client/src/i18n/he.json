@@ -1,0 +1,24 @@
+{
+        "main_title":"צור שאלות תרגול",
+        "topic":"נושא",
+        "subtopic":"תת נושא",
+        "error_topic":"הזן נושא.",
+        "error_subtopic":"הזן תת נושא.",
+        "error_form_submission":"אנא ענו על כל השאלות",
+        "error_fetch_quiz":"משהו השתבש. אנא נסה בשנית",
+        "language_mismatch_warning": "השאלון נטען ב{{quizLang}}, אך כעת אתה צופה באתר ב{{currentLang}}.",
+        "language_reload_suggestion": "כדי לצפות בשאלות בשפה הרצויה, אנא התחל שאלון חדש.",
+        "correct_answer":"נכון",
+        "wrong_answer":"תשובה נכונה",
+        "get_result_btn":"צור תרגילים",
+        "result_title":"חידונים לפי רמה",
+        "back": " → התחל שאלון חדש",
+        "submit": "שלח שאלון",
+        "score": "הציון שלך",
+        "levels":{"beginner":"מתחילים","intermediate":"ביניים","expert":"מומחים"},
+        "regenerate_level":"צור תרגילים חדשים",
+        "reset":"אפס שאלון"
+}
+
+
+

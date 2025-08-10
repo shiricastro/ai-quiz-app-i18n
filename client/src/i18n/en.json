@@ -1,0 +1,23 @@
+{
+"main_title":"Generate Practice Questions",
+"topic":"Topic",
+"subtopic":"Subtopic",
+"error_topic":"Enter a topic.",
+"error_subtopic":"Enter a subtopic.",
+"error_form_submission":"Please answer all questions first.",
+"error_fetch_quiz":"Something went wrong. Please try again.",
+"language_mismatch_warning": "You are currently viewing the site in {{currentLang}}, but the quiz was loaded in {{quizLang}}.",
+"language_reload_suggestion": "To view questions in your preferred language, please start a new quiz.",
+"correct_answer":"Correct",
+"wrong_answer":"Correct answer",
+"get_result_btn":"Generate Exercises",
+"result_title":"Quizzes By Level",
+"back": "← Start New Quiz",
+"submit": "Submit Quiz",
+"score": "Your score",
+"levels":{"beginner":"Beginner","intermediate":"Intermediate","expert":"Expert"},
+"regenerate_level":"regenerate exercises",
+"reset":"Reset Quiz"
+}
+
+

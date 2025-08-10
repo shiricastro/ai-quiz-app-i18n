@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-base lg:text-base-lg font-questrial text-edventure-base bg-edventure-light;
+  }
+}
+
+@layer components {
+  .title {
+    @apply text-heading text-center lg:text-heading-lg;
+  }
+  .subtitle {
+    @apply text-subtitle text-center lg:text-subtitle-lg;
+  }
+  .base {
+    @apply text-base lg:text-base-lg;
+  }
+
+  .input-field {
+    @apply text-base lg:text-base-lg font-questrial text-edventure-base
+      bg-white rounded-[10px] px-4 py-[14px]
+      border-0 border-b border-edventure-base
+      focus:outline-none focus:ring-1 focus:ring-edventure-primary;
+    line-height: 1;
+  }
+  .input-error {
+    @apply border-b border-edventure-red;
+  }
+  .form-group {
+    @apply flex flex-col gap-1.5 mb-5;
+  }
+
+  .btn-primary {
+    @apply text-button font-medium rounded-[10px] px-6 py-[15px]
+      w-full justify-center flex items-center
+      text-white
+      bg-edventure-primary
+      lg:text-button-lg
+      hover:bg-edventure-secondary
+      hover:text-edventure-base
+      transition-all duration-200;
+    line-height: 1;
+  }
+  .btn-primary-small {
+    @apply text-small font-medium rounded-[10px] px-4 py-[10px]
+      justify-center flex items-center
+      text-white
+      bg-edventure-primary
+      lg:text-small-lg
+      hover:bg-edventure-secondary
+      hover:text-edventure-base
+      transition-all duration-200;
+    line-height: 1;
+  }
+  .btn-base{
+    @apply text-button font-medium rounded-[10px] px-6 py-[15px]
+      w-full justify-center flex items-center
+      text-white
+      bg-edventure-base
+      lg:text-button-lg
+      hover:bg-edventure-secondary
+      hover:text-edventure-base
+      transition-all duration-200;
+    line-height: 1;    
+  }
+  .btn-small-link {
+    @apply text-small text-edventure-base hover:text-edventure-primary transition-all lg:text-small-lg;
+  }
+  .btn-link {
+    @apply text-base text-edventure-base hover:text-edventure-primary transition-all lg:text-base-lg;
+  }
+  .btn-tab {
+    @apply text-base lg:text-base-lg rounded-[10px] px-5 py-[13px] transition-all duration-200;
+    line-height: 1;
+  }
+  .btn-tab-default {
+    @apply bg-edventure-base text-white hover:bg-edventure-secondary hover:text-edventure-base;
+  }
+  .btn-tab-active {
+    @apply bg-edventure-primary text-white hover:bg-edventure-secondary hover:text-edventure-base;
+  }
+
+  .main-container {
+    @apply relative min-h-screen bg-edventure-light overflow-hidden;
+  }
+  .header {
+    @apply relative flex items-center px-6 py-4;
+  }
+  .search-container {
+    @apply flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8;
+  }
+  .result-container {
+    @apply max-w-2xl mx-auto py-8 px-4;
+  }
+  .result-footer-container {
+    @apply flex flex-col items-center gap-4 mt-6;
+  }
+  .result-footer-btns-container{
+    @apply flex justify-center gap-4 flex-wrap;
+  }
+
+  .question-container {
+    @apply border border-gray-200 rounded-lg p-4 bg-white shadow-sm;
+  }
+  .question-title {
+    @apply text-edventure-primary font-semibold mb-2;
+  }
+  .score-text {
+    @apply text-xl font-semibold text-edventure-primary;
+  }
+  .levels-tab-container {
+    @apply flex justify-center gap-4 mb-6 flex-wrap;
+  }
+  .explanation-container {
+    @apply text-sm text-gray-500 mt-1;
+  }
+
+  .error-msg {
+    @apply text-edventure-red text-small lg:text-small-lg flex items-center;
+  }
+  .worning-container {
+    @apply text-small bg-edventure-light shadow-sm border-l-4 border-edventure-primary text-edventure-red p-4 mb-6 rounded-[10px] flex items-center justify-between;
+  }
+}
+
+@layer utilities {
+  input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset !important;
+    box-shadow: 0 0 0 1000px white inset !important;
+    -webkit-text-fill-color: theme('colors.edventure.base') !important;
+  }
+
+  .blob {
+    @apply pointer-events-none fixed w-[400px] h-[400px] rounded-full blur-[50px] z-0;
+  }
+  .blob-top-right {
+    top: 120px;
+    right: -155px;
+    background: radial-gradient(circle, theme('colors.edventure.secondary') 0%, transparent 70%);
+  }
+  .blob-bottom-left {
+    bottom: -100px;
+    left: -100px;
+    background: radial-gradient(circle, theme('colors.edventure.primary') 0%, transparent 70%);
+  }
+
+  .progress-bar-container {
+    @apply w-full bg-gray-200 rounded-full h-4;
+  }
+  .progress-bar {
+    @apply bg-edventure-primary h-4 rounded-full transition-all duration-300;
+  }
+  .progress-bar-text {
+    @apply text-center text-small lg:text-small-lg mt-1 text-gray-700;
+  }
+}
