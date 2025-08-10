@@ -108,6 +108,7 @@
   .question-title {
     @apply text-edventure-primary font-semibold mb-2;
   }
+
   .score-text {
     @apply text-xl font-semibold text-edventure-primary;
   }

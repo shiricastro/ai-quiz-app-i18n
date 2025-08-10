@@ -9,8 +9,8 @@ const QuestionList = ({ questions, currentAnswers, isSubmitted, handleSelectAnsw
             const isCorrect = selectedIndex === q.answerIndex;
 
             return (
-            <fieldset key={i} className="question-container">
-                <legend className="question-title">{i + 1}. {q.question}</legend>
+            <div key={i} className="question-container">
+                <h3 className="question-title">{i + 1}. {q.question}</h3>
                 <div className="flex flex-col gap-2">
                     {
                         q.choices.map((choice, idx) => {
@@ -49,7 +49,7 @@ const QuestionList = ({ questions, currentAnswers, isSubmitted, handleSelectAnsw
                         <span className="italic">{q.explanation}</span>
                     </p>
                 )}
-            </fieldset>
+            </div>
             );
         })}
         </div>

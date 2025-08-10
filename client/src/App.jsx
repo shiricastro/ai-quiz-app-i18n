@@ -4,7 +4,7 @@ import SearchComp from "./components/SearchComp";
 import BackgroundBlobs from "./components/BackgroundBlobsComp";
 import ResultsComp from './components/ResultComp';
 import Header from './components/Header';
-import { fetchAndStoreQuiz, normalizeText, getJSONFromLocal, setToLocal } from "./utils/quizUtils";
+import { fetchAndStoreQuiz, normalizeText, getJSONFromLocal } from "./utils/quizUtils";
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -54,7 +54,7 @@ function App() {
   }, [i18n.language]);
   
   return (
-    <div className="main-container">
+    <div className="main-container" dir={i18n.language === 'he' ? 'rtl' : 'ltr'}>
       <BackgroundBlobs />
       <Header
         onBack={handleBack}
